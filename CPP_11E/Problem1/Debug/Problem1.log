@@ -1,0 +1,6 @@
+﻿  Main.cpp
+d:\visual studio\projekty\cpp_11e\problem1\main.cpp(28): warning C4018: '<': signed/unsigned mismatch
+d:\visual studio\projekty\cpp_11e\problem1\main.cpp(43): warning C4018: '<': signed/unsigned mismatch
+Main.obj : error LNK2019: unresolved external symbol "public: class Color & __thiscall Color::operator=(class Color const &)" (??4Color@@QAEAAV0@ABV0@@Z) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class Color const &)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@ABVColor@@@Z) referenced in function _main
+D:\Visual Studio\projekty\CPP_11E\Debug\Problem1.exe : fatal error LNK1120: 2 unresolved externals

@@ -1,0 +1,4 @@
+﻿  Main.cpp
+d:\visual studio\projekty\exercise\exercise\main.cpp(12): warning C4101: 'p2': unreferenced local variable
+  Exercise.vcxproj -> D:\Visual Studio\projekty\Exercise\Debug\Exercise.exe
+  Exercise.vcxproj -> D:\Visual Studio\projekty\Exercise\Debug\Exercise.pdb (Full PDB)

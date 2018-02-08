@@ -1,0 +1,4 @@
+﻿  Main.cpp
+d:\visual studio\projekty\set4\problem4\main.cpp(72): warning C4715: 'simil': not all control paths return a value
+  Problem4.vcxproj -> D:\Visual Studio\projekty\Set4\Debug\Problem4.exe
+  Problem4.vcxproj -> D:\Visual Studio\projekty\Set4\Debug\Problem4.pdb (Full PDB)

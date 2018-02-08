@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1Problem3", "1Problem3\1Problem3.vcxproj", "{1A4B8C76-2A01-447C-9B50-9A4D87C3D36F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1Problem4", "1Problem4\1Problem4.vcxproj", "{C88A01C8-4B72-43F2-843F-6443FF704A5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A4B8C76-2A01-447C-9B50-9A4D87C3D36F}.Debug|x64.ActiveCfg = Debug|x64
+		{1A4B8C76-2A01-447C-9B50-9A4D87C3D36F}.Debug|x64.Build.0 = Debug|x64
+		{1A4B8C76-2A01-447C-9B50-9A4D87C3D36F}.Debug|x86.ActiveCfg = Debug|Win32
+		{1A4B8C76-2A01-447C-9B50-9A4D87C3D36F}.Debug|x86.Build.0 = Debug|Win32
+		{1A4B8C76-2A01-447C-9B50-9A4D87C3D36F}.Release|x64.ActiveCfg = Release|x64
+		{1A4B8C76-2A01-447C-9B50-9A4D87C3D36F}.Release|x64.Build.0 = Release|x64
+		{1A4B8C76-2A01-447C-9B50-9A4D87C3D36F}.Release|x86.ActiveCfg = Release|Win32
+		{1A4B8C76-2A01-447C-9B50-9A4D87C3D36F}.Release|x86.Build.0 = Release|Win32
+		{C88A01C8-4B72-43F2-843F-6443FF704A5A}.Debug|x64.ActiveCfg = Debug|x64
+		{C88A01C8-4B72-43F2-843F-6443FF704A5A}.Debug|x64.Build.0 = Debug|x64
+		{C88A01C8-4B72-43F2-843F-6443FF704A5A}.Debug|x86.ActiveCfg = Debug|Win32
+		{C88A01C8-4B72-43F2-843F-6443FF704A5A}.Debug|x86.Build.0 = Debug|Win32
+		{C88A01C8-4B72-43F2-843F-6443FF704A5A}.Release|x64.ActiveCfg = Release|x64
+		{C88A01C8-4B72-43F2-843F-6443FF704A5A}.Release|x64.Build.0 = Release|x64
+		{C88A01C8-4B72-43F2-843F-6443FF704A5A}.Release|x86.ActiveCfg = Release|Win32
+		{C88A01C8-4B72-43F2-843F-6443FF704A5A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

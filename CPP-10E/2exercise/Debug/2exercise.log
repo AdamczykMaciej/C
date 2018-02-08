@@ -1,0 +1,16 @@
+﻿  Main.cpp
+d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(6): error C2065: 'Resistor': undeclared identifier
+d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(6): error C2146: syntax error: missing ';' before identifier 'r1'
+d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(6): error C2065: 'r1': undeclared identifier
+d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(6): error C2065: 'r2': undeclared identifier
+d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(7): error C2065: 'r1': undeclared identifier
+d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(7): error C2228: left of '.r' must have class/struct/union
+  d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(7): note: type is 'unknown-type'
+d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(8): error C2039: 'cout': is not a member of 'std'
+  d:\visual studio\projekty\cpp-10e\2exercise\predefined c++ types (compiler internal)(208): note: see declaration of 'std'
+d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(8): error C2065: 'cout': undeclared identifier
+d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(8): error C2065: 'r1': undeclared identifier
+d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(8): error C2065: 'r2': undeclared identifier
+d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(8): error C2039: 'endl': is not a member of 'std'
+  d:\visual studio\projekty\cpp-10e\2exercise\predefined c++ types (compiler internal)(208): note: see declaration of 'std'
+d:\visual studio\projekty\cpp-10e\2exercise\main.cpp(8): error C2065: 'endl': undeclared identifier

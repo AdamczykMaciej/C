@@ -2,7 +2,10 @@
 #include <cstring>
 #include <string>
 #include <cmath>
-#include "Print.h"
+#include "Print.h" // includes a header which contains a method "print", created by myself
+#include <vector>
+#include <unordered_map>
+#include <map>
 
 using namespace std;
 
@@ -28,6 +31,62 @@ class Person
     ~Person() {}
 };
 
+ static void bubbleSort(int ar[], int n){
+     
+     for(int i=0; i<n; i++){
+         for(int j=1; j<n-i; j++){
+             if(ar[j-1]>ar[j]){
+                 int temp=ar[j];
+                 ar[j]=ar[j-1];
+                 ar[j-1]=temp;
+             }
+         }
+     }
+
+}
+
+static void bubbleSort2(int (&ar)[6], int n){
+    
+    for(int i=0; i<n; i++){
+        for(int j=1; j<n-i; j++){
+            if(ar[j-1]>ar[j]){
+                int temp=ar[j];
+                ar[j]=ar[j-1];
+                ar[j-1]=temp;
+            }
+        }
+    }
+
+}
+
+static bool binarySearch(int ar[],int n, int key){
+    
+    int up=n-1;
+    int down=0;
+    for(int i=0; i<n; i++){
+        int middle=(up+down)/2;
+        cout<<"middle "<<middle<<endl;
+        cout<<"up "<<up<<endl;
+        cout<<"down "<<down<<endl;
+        if(middle==down && middle<up){
+            middle+=1;
+        }
+        else if(middle==up && middle>down){
+            middle+=1;
+        }
+        if(ar[middle]<key){
+            down=middle;
+        }
+        else if(ar[middle]>key){
+            up=middle;
+        }
+        else{
+            return true;
+        }
+    }
+    return false;
+}
+
 int a=100; //global variable
 static string banana(int k){
     return "banana";
@@ -40,7 +99,38 @@ extern int test(20); // we can't use it. We can access it, forward it.
 int x = lala;
 #endif
 int main()
-{   
+{    
+    //unordered map  
+    unordered_map<string, int> umap;
+    umap["Maciek123"]=20;
+    umap["Bartek123"]=20;
+    umap["Pablo"]=20;
+    umap["Magic"]=29;
+    umap.find("Maciek123");
+    for(auto t: umap){
+        cout<<"Key: "<<t.first<<" Value: "<<t.second<<endl;
+    }
+    cout<<"----------------------"<<endl;
+    //ordered map (when string then alphabetical order)
+    map<string, int> map;
+    map["Maciek123"]=20;
+    map["Bartek123"]=20;
+    map["Pablo"]=20;
+    map["Magic"]=29;
+    for(auto t: map){
+        cout<<"Key: "<<t.first<<" Value: "<<t.second<<endl;
+    }
+    
+    //vectors
+    vector<string> v;
+    v.push_back("Maciek"); //adding
+    v.push_back("Bartek");
+    while(!v.empty()){ //checks if empty
+        cout<<v.back()<<endl; //returns the last added element
+        v.pop_back(); //removes the last element (void)
+
+    }
+    
     extern int test;
     cout<<"test: "<<test<<" x: "<<x<<endl;
     int *pi = new int;
@@ -85,6 +175,37 @@ int main()
     //     cout << ar[i] << endl;
     // }
     const char* c2 = "Maciek";
+    char* c3 = new char[10];
+    
+    
+    char c4[10] ="";
+    char ch = (char) 87;
+    c4[0]=ch;
+    cout<<c4[0];
+    cout<<strlen(c3)<<endl;
+    c4[1]=(char) 2;
+    cout<<strlen(c4)<<endl;
+    cout<<c4[0]<<endl;
+    cout<<c4[1]<<endl;
+    strcpy(c4, "maciek"); //for copying a cstring to a cstring, another way is a loop which is tedious to do so
+    
+    for(int i=0; i<strlen(c3); i++)
+    {
+        c3[i]='a'+i;
+        cout<<c3[i]<<" ";
+    }
+    cout<<endl;
+    for(int i=0; i<strlen(c4); i++){
+        c4[i]='a'+i;
+        cout<<c4[i]<<" ";
+    }
+    cout<<endl;
+    cout<<strlen(c3);
+    cout<<strlen(c4);
+    cout<<endl;
+    cout<<'a'<<endl;
+
+
     print(c2);
     
     auto maciek = [&](int x){
@@ -93,6 +214,23 @@ int main()
     maciek(10);
     cout<<::a<<endl;
     cout<<banana(100)<<endl;
+    //binary sort
+    int arr[]={7, 2, 4, 6, 9, 1, 8};
+    int arr2[]={1, 8, 72, 5, 2, 4};
+    int n2=sizeof(arr2)/sizeof(arr2[0]);
+    int n=sizeof(arr)/sizeof(arr[0]);
+    bubbleSort(arr, n);
+    for(int i=0; i<n; i++){
+        cout<<i<<" "<<arr[i]<<endl;
+    }
+    bubbleSort2(arr2, n2);
+    for(int i=0; i<n2; i++){
+        cout<<i<<" "<<arr2[i]<<endl;
+    }
+
+    int arr3[]={1,2,3,4,5,6,7,8,9,10};
+    int len=sizeof(arr3)/sizeof(arr3[0]);
+    cout<<binarySearch(arr3,len,  11)<<endl;
 }
 
 
